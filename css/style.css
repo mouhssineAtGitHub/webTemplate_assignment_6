@@ -1,0 +1,510 @@
+* { box-sizing: border-box; }
+
+/*-- body styling  --*/
+body {	
+    width: 100%; 
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+.block-title{
+    text-align: center;
+    font-weight:normal;
+    /* font-size:25px; */
+}
+
+
+.lineMe {
+    width: 50px;
+    height: 1px;
+    border-bottom:1px solid #313030;
+    outline:0;
+    margin-bottom:20px;  
+}
+
+
+/* -- blocks styling -- */
+.header{
+    width:100%;
+    height:100%;
+    background-color:#ffffff;
+    padding:20px 40px;
+}
+
+.we-are-clemo{
+    width:100%;
+    background-color:#ffffff;
+    padding:20px 40px;
+}
+.what-we-do{
+    width:100%;
+    background-color:#f9f9f9;
+    padding:20px 40px;
+
+}
+.our-best-work{
+    width:100%;
+    background-color:#ffffff;
+    padding:20px 40px;
+
+}
+.best-team{
+    width:100%;
+    background-color:#fee1bf;
+    padding:20px 40px;
+
+}
+.clients-says{
+    width:100%;
+    background-color:#ffffff;
+    padding:20px 40px;
+
+}
+.get-in-touch{
+    width:100%;
+    position:relative;
+    background-image:url("../images/tuchbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height:470px; 
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+.footer{
+    width:100%;
+    background-color:#ffffff;
+    padding:20px 40px;
+}
+
+/* -- header -- */
+.logo { grid-area: logo; }
+
+.my-menu { grid-area: my-menu; }
+
+.header-layout {
+    display: grid;
+    grid-template-areas: 'logo my-menu';
+    grid-template-columns: 40% auto;
+}
+
+.logo { 
+
+    display:flex;
+    align-items: center; 
+}
+
+.my-menu{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.my-menu ul {
+     display: flex;
+     flex-direction: row;
+     list-style-type: none;
+     
+ }
+ 
+.my-menu li a {
+     color: #4d4d4d;
+     text-align: center;
+     padding: 10px 10px;
+     text-decoration: none;
+ }
+ 
+.my-menu li a:hover {
+     color: #747474;
+     outline: 0;
+ }
+
+
+.tranparent-line{
+    border: 2px;
+    width:100%;
+    height: 6px;
+    background: grey;
+    background-image: linear-gradient(grey, white);
+    outline:0;
+}
+
+
+/* -- we-are-clemo styling -- */
+.transparent-img{
+    position:relative;
+    background-color:#fee1bf;
+    background-image: url("../images/homebg.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-blend-mode: overlay ;
+    height:460px; 
+    /* opacity: 0.7;
+    filter: alpha(opacity=50);  */
+}  
+
+/* .overlay2 {
+    background-color: rgba(254, 225, 191, 1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  } */
+
+.items-on-img{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position:absolute;
+    top: 20%;
+    left:40%; 
+}
+
+.main-title{
+    text-align: center;
+    font-weight:bold;
+    font-size:40px;
+    color:black;
+}
+
+.items-on-img p {
+text-align: center;
+margin:0 0 10px 0;
+padding:0 0 5px 0;
+}
+
+.items-on-img button {
+    text-align: center;
+    color:white;
+    background-color: black;
+    margin:20px 0;
+    padding:5px 30px;
+    border-radius: 20px;
+    border:0;
+    
+}
+
+.dimond-list{
+
+    position:absolute;
+    top: 40%;
+    left:93%; 
+}
+ul{
+    list-style-type: none;
+}
+.my-cube {
+    width:8px;
+    height:8px;
+    margin:10px 0;
+    border:1px solid black;
+    transform: rotate(45deg);
+}
+
+.my-cube:hover  {
+    border:1px solid white;
+}
+
+.my-cube.active  {
+    background-color:white;
+    border:1px solid white;
+}
+
+
+
+/* -- what-we-do styling -- */ 
+.what-we-do-layout{
+
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+}
+
+.what-we-do-layout .what-we-do-image .what-we-do-article{
+
+    max-width:100%;
+    height:300px;
+}
+article.padding-more{
+    padding-left:40px;
+}
+.what-we-do-article button {
+    text-align: center;
+    color:black;
+    background-color: #ffffff;
+    margin:20px 0;
+    padding:5px 30px;
+    border-radius: 20px;
+    border:1px solid #e6e6e6;    
+}
+.what-we-do-article .title2{
+    padding:0;
+    margin:0 0 2px 0;
+    font-weight: normal;
+    font-size:20px;
+}
+.what-we-do-article .title1{
+    padding:0 0 10px 0;
+    margin:0 0 10px 0;
+    font-weight: bold;
+    font-size:30px;
+}
+
+
+
+
+/* -- what-we-do styling -- */ 
+.our-best-work-layout{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto auto auto;
+    grid-column-gap: 0;
+}
+
+.our-best-work-layout img{
+    margin:0 0 20px 0;padding:0;
+}
+.center-me{
+
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.center-me > button {
+    text-align: center;
+    color:white;
+    background-color: black;
+    margin:20px auto;
+    padding:5px 30px;
+    border-radius: 20px;
+    border:0;    
+}
+
+/* -- best-team styling -- */
+.best-team-box{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.img-box{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin:0 40px;
+}
+ .img-box-i {
+    font-size: 40px;
+    padding-top:40px;
+
+ }
+
+.img-box  img {
+    border-radius: 50%;
+    padding-right:5px;
+    height:100%;
+    width:100%;
+}
+.cube-items{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    margin: 20px 0;
+}
+
+.cube-items div{
+    margin-right: 10px;
+
+}
+
+.box-name{
+ font-size: 25px;
+ font-weight: bold;
+ color:black;
+}
+
+.box-job{
+    color:#747474;
+    margin:0; padding:0;
+}
+
+
+
+/* -- client-says styling -- */
+.part-1 { grid-area: part-1;}
+.part-2 { grid-area: part-2;}
+
+.grid-container5 {
+  display: grid;
+  grid-template-areas:
+    'part-1 part-2';
+  grid-template-columns: 50% 50%; 
+  justify-content: center; 
+  margin-bottom:20px;
+}
+
+.part-1{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+    padding-top: 0;
+    margin-top:0;
+}
+.nomargin{
+    margin:16px 0 16px 0;
+}
+.part-3{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+}
+.part-3 img {
+    max-width:100px;
+    max-height:70px;
+    padding-right: 10px;
+    
+}
+
+.circled-items{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    margin-top:10px;
+}
+.my-circle {
+    width:8px;
+    height:8px;
+    margin:10px 0;
+    border:1px solid black;
+    border-radius: 50%;
+    /* transform: rotate(45deg); */
+}
+
+.my-circle:hover  {
+    border:1px solid black;
+    background-color:black;
+}
+
+.my-circle.active  {
+    background-color:black;
+    border:1px solid black;
+}
+.circled-items div{
+margin-right:10px;
+}
+
+
+/* -- get-in-touch styling -- */
+.form-part1 { grid-area: form-part1; width:100%; height:100%;}
+.form-part2 { grid-area:form- part2;}
+
+.get-in-touch-container {
+  display: grid;
+  grid-template-areas:
+    'form-part1 form-part2';
+  grid-template-columns: 50% 50%; 
+  justify-content: center; 
+  padding:20px 40px;
+}
+
+input[type="text"], textarea
+{
+    border: 0;
+	border-bottom: 1px solid #555555;
+	background: transparent;
+	outline: 0;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+
+}
+.inputTxt_1 {
+	width:100%;
+	margin-bottom: 20px;
+}
+
+input[type=submit] {
+    text-align: center;
+    color:#4d4d4d;
+    background-color: white;
+    margin:20px 0;
+    padding:5px 30px;
+    border-radius: 20px;
+    border:0;
+}
+
+textarea {
+	width: 100%;
+	padding: 5px;
+	background: transparent;
+    border:none;
+    border-bottom: 1px solid #4d4d4d;
+	height:100px;
+	margin-bottom: 20px;
+}
+
+
+input, textarea, textarea:focus, input:focus {
+	color: white;
+	outline: 0;
+	font-weight: bold;
+}
+
+.personal-info{
+    margin:0 10px 30px 0;
+}
+
+.personal-info i , .personal-info span{
+   color:white;
+   padding-right: 10px;
+}
+
+.rounded{
+    width:30px;
+    height:auto;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    padding:5px 10px;
+    color:black;
+}
+.block-title2{
+    text-align: center;
+    font-weight:normal;
+    color:white;
+    padding:20px;
+    /* font-size:25px; */
+}
+
+/* -- footer styling  -- */
+.footer{
+    text-align:center;
+}
+
+.color-orange{
+    padding:0 10px;
+    color:#fccb95;
+}
